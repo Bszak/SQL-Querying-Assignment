@@ -1,0 +1,70 @@
+
+Print out all the student first names and last names. (1pt)
+
+RESULT:
+first_name   last_name
+
+Hugh   Nichols
+Carl   Mccarthy
+Marvin Sharp
+Joyce  Harmon
+Doreen Cruz
+
+Print out the IDs of all the tenured instructors. (1pt)
+
+RESULT:
+instructor_id tenured
+1    1
+2    0
+3    0
+4    1
+
+
+Print out the student first and last names along with their advisor's first and last names. 
+Make sure to alias descriptive column names. Leave out any students without advisors and any advisors without students. (1pt)
+
+RESULT:
+first_name  last_ name  first_name  last_name
+Hugh    Nichols Lauren Garner
+Marvin  Sharp   Carl    Mccarthy
+Joyce   Harmon  Carl    Mccarthy
+Doreen  Cruz    Lauren  Garner
+
+
+Print out the ID, first name, and last name of all instructors who do not have any advisees 
+(HINT: Lookup the different join types in MySQL and use "IS NULL" instead of "= NULL"). (1pt)
+
+RESULT:
+first_name  last_ name           first_name  last_name
+Doreen  Cruz    Lauren  Garner
+Hugh    Nichols Lauren  Garner
+NULL    NULL    Herman  Watts
+Joyce   Harmon  Carl    Mccarthy
+Marvin  Sharp   Carl    Mccarthy
+NULL    NULL    Sylvia  Sanchez
+
+
+Print out the first and last name of all the instructors along with the total number of credit hours they teach. (1pt)
+
+RESULT:
+first_name    last_name   Count(s.num_credits)
+Herman  Watts   2
+Lauren Garner   2
+Sylvia Sanchez  1
+Carl   Mccarthy 2
+
+
+
+Print out the course code and course name of all 3000 level courses (HINT: Lookup the SQL LIKE operator). (1pt)
+
+RESULT:
+idk
+
+
+Print out the course schedule of the student with an ID of 1 by printing off the course code, instructor first name,
+instructor last name, and number of credit hours for each course in which student 1 is enrolled. (3pts)
+
+RESULT: 
+course_id   first_name   last_name   count(c.num_credits)
+2           Lauren       Garner      1
+3           Lauren       Garner      1
